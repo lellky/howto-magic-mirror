@@ -4,7 +4,7 @@ Since building my [first Magic Mirror](README.md) a lot has changed.
 
 The first build used an acrylic "mirror" and an LCD panel from an old laptop (actually two, since the first one got
 incinerated when the mirror hit the floor). Anyway, the first version had some flaws:
-* The acrylic mirror easily got scratches
+* The acrylic mirror easily got scratches and the surface is not perfectly flat which gives funny effects
 * The frame was built by modifying an IKEA frame which never looked very good.
 * The Raspberry Pi that was used was old and slow
 
@@ -19,7 +19,8 @@ I bought failed (some actually started smoking).
 ## The most awesome magic mirror setup ever
 
 So. The hardware... Lessons learned from the [first version](README.md) was, in short, LCD panels are visible through 
-the mirror even when the picture is black. And using acrylic mirrors are bad due to scratches.
+the mirror even when the picture is black. And using acrylic mirrors are bad due to scratches and that the surface is
+not perfectly flat.
 
 ![alt text](images/panel-visible-through-mirror.jpg "One can clearly see the panel")
 

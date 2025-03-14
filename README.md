@@ -125,7 +125,7 @@ After running the mirror for almost five years (it did fell one time, so I had t
 it. The frame have some cracks and I have always been annoyed with the light from the LCD coming through the mirror so you
 can see exactly where the screen is behind the mirror.
 
-Also, the mirror has scratches... 
+Also, the mirror has scratches and the surface is not perfectly flat... 
 
 So. What about an OLED screen? And a scratch-free mirror? And a faster Pi? And a frame that needs no modification?
 
