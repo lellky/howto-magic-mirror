@@ -66,7 +66,7 @@ You have three options:
 
 ## First version (2019)
 
-I had already bought a 30,5x61 cm (12"x24") acrylic mirror on Amazon.
+This project started in 2017, and I had already bought a 30,5x61 cm (12"x24") acrylic mirror on Amazon.
 
 Since my mirror is way bigger than my 15,6" panel I bought a piece of black paper as large as the mirror and made a 
 cut-out for the panel. If this is not done you can see through the part of the mirror which does not have the panel 
@@ -122,7 +122,7 @@ At this point the magic mirror should work and one can either use HADashboard or
 
 ### Conclusion
 After running the mirror for almost five years (it did fell one time, so I had to replace the panel) I can't live without
-it. The frame have some cracks ant I have always been annoyed with the light from the LCD coming through the mirror so you
+it. The frame have some cracks and I have always been annoyed with the light from the LCD coming through the mirror so you
 can see exactly where the screen is behind the mirror.
 
 Also, the mirror has scratches... 
