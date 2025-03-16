@@ -35,22 +35,25 @@ could continue after nearly four years on the shelf.
 
 This is what the Magic Mirror will consist of:
 
-| Part                                     | Link                                                                | Cost           |
-|------------------------------------------|---------------------------------------------------------------------|----------------|
-| Samsung atna56yx03 OLED panel            | [Aliexpress](https://www.aliexpress.com/item/1005004725887223.html) | approx. 180 USD |
-| SAINT-GOBAIN GLASS MIRASTAR 500x700x6 mm | [Glasbolaget (Sweden)](https://glasbolaget.se/glas-speglar/spionspegel/) | approx. 110 USD |
-| Frame, Ribba from Ikea | No longer available? But any frame should do | approx. 20 USD |
-| Raspberry Pi 4 Model B | [Raspberry 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) | 50-70 USD |
-| Car charger | [Amazon](https://www.amazon.se/dp/B08VJ2VH2J) | 14 USD |
-| USB-C cable(s) | [Amazon](https://www.amazon.se/dp/B0BF4ZSFT1) | 9 USD |
-| USB A->C cable(s) | [Amazon](https://www.amazon.se/dp/B0B9XY39FF) | 8 USD |
-| HDMI-cable | [Amazon](https://www.amazon.com/Seadream-Micro-Connector-Adapter-Cable/dp/B08BFZFT7R/) | 7 USD |
+| Part                                         | Link                                                                                  | Cost           |
+|----------------------------------------------|---------------------------------------------------------------------------------------|----------------|
+| Samsung atna56yx03 OLED panel                | [Aliexpress](https://www.aliexpress.com/item/1005004725887223.html)                   | approx. 180 USD |
+| Oled panel driver | [Aliexpress](https://www.aliexpress.com/item/1005006499232516.html) | approx 40 USD |
+| SAINT-GOBAIN GLASS [MIRASTAR](https://www.saint-gobain-glass.com/MIRASTAR-MIRASTAR-REFLECT) 500x700x6 mm | [Glasbolaget (Sweden)](https://glasbolaget.se/k/spegelglas/) | approx. 110 USD |
+| Frame, Ribba from Ikea                       | No longer available? But any frame should do                                          | approx. 20 USD |
+| Raspberry Pi 4 Model B                       | [Raspberry 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)           | 50-70 USD |
+| Car charger                                  | [Amazon](https://www.amazon.se/dp/B08VJ2VH2J)                                         | 14 USD |
+| USB-C cable(s)                               | [Amazon](https://www.amazon.se/dp/B0BF4ZSFT1)                                         | 9 USD |
+| USB A->C cable(s)                            | [Amazon](https://www.amazon.se/dp/B0B9XY39FF)                                         | 8 USD |
+| HDMI-cable                                   | [Amazon](https://www.amazon.com/Seadream-Micro-Connector-Adapter-Cable/dp/B08BFZFT7R/) | 7 USD |
 
 And then a 12V power supply and a cable with a DC connector or something similar. Maybe a fan or a heat sink. Or both.
 
+Alternately there are portable monitors that can be used: https://www.aliexpress.com/item/1005007915529155.html and https://www.aliexpress.com/item/1005006782948672.html
+
 ## The build
 
-The mirror will be assembled in the frame, with the glass, suing 3D printed parts. I have just ordered a 3D printer that
+The mirror will be assembled in the frame, with the glass, using 3D printed parts. I have just ordered a 3D printer that
 will arrive soon. I hope. Then the build will continue. But first, preparations.
 
 ## Testing the hardware
