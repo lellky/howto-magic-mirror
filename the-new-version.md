@@ -69,14 +69,19 @@ Quick test with the panel behind the glass
 This bit changes from year to year. I installed Raspbian 64 bit version on my Pi 4 Model B and this is what has to be done
 to get it to work in kiosk mode. Thanks to [Sanjay](https://read.sanjaysikdar.dev/raspberry-pi-zero-2w-kiosk)!
 
-### Update the system
-
-`sudo apt update && sudo apt upgrade` and `sudo reboot` to get the latest and greatest of the software.
-
 ### Configuration
 
 After that the Pi must be configured to boot into CLI-mode and log in `sudo raspi-config`.
 Choose System options -> Boot / Auto Login -> B2 Console Autologin
+Set X11 instead of Wayland: Advanced Options -> A7 Wayand -> W1 X11 
+
+Also set the logging to volatile (for less wear on the SD card) in System Options -> S10 Logging -> Volatile
+
+Then reboot.
+
+### Update the system
+
+`sudo apt update && sudo apt upgrade` and `sudo reboot` to get the latest and greatest of the software.
 
 ### Software that is needed
 
@@ -141,6 +146,7 @@ chromium-browser --kiosk --disable-gpu --noerrdialogs --disable-infobars --disab
     --disable-background-mode --disable-popup-blocking --no-first-run \
     --enable-gpu-rasterization --disable-translate --disable-logging --disable-default-apps \
     --disable-extensions --disable-crash-reporter --disable-pdf-extension --disable-new-tab-first-run \
+    --disk-cache-dir=/dev/shm/chromium-cache \
     --disable-dev-shm-usage --start-maximized --mute-audio --disable-crashpad --hide-scrollbars \
     --ash-hide-cursor --memory-pressure-off --force-device-scale-factor=1 --window-position=0,0 \
     --window-size=${SCREEN_WIDTH},${SCREEN_HEIGHT} "$WEBSITE_URL" &
@@ -153,11 +159,14 @@ else
 fi
 ```
 
-Now, edit the file `sudo vim .bash_profile` and add the following: `add [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor`
+Now, edit the file _.bash_profile_ with `sudo vim .bash_profile` and add the following: `[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor` to remove the cursor.
 
-One thing that is not mentioned anywhere is that for this to work, the desktop environment must be changed.
+And one thing that is not mentioned anywhere on the internet is that for this to work, the desktop environment must be changed.
 
-To do this run `sudo update-alternatives --config x-session-manager` and choose "/usr/bin/openbox-session".
+To do this run `sudo update-alternatives --config x-session-manager` and choose "/usr/bin/openbox-session". Or, it is now added in raspi-config (see above).
+
+### Rotate the screen
+sudo vim /boot/firmware/config.txt and add the content `display_lcd_rotate=3` (1,2,3,4) and comment out the line `# dtoverlay=vc4-fkms-v3d`
 
 Now, if everything is correct, a reboot should start the Pi in kiosk mode with Chromium browser and open the webpage
 defined in the above configuration file.
