@@ -1,5 +1,7 @@
 # How to build a Magic Mirror, second version
 
+![alt text](images/magic-mirror-2.png "The new shiny version")
+
 Since building my [first Magic Mirror](README.md) a lot has changed.
 
 The first build used an acrylic "mirror" and an LCD panel from an old laptop (actually two, since the first one got
